@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MazeGame</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body1>
+    <div id="root">
+      <div id="endScreen">
+        <stack>
+          <h1>Congratulations</h1>
+          <h2>You have completed the maze</h2>
+          <body1 id="score"></body1>
+          <body1 id="time"></body1>
+          <body1 id="size"></body1>
+          <button onclick="gameOver()">Return Home to Play Again</button>
+        </stack>
+      </div>
+      <div id="game">
+        <div>
+            <h1>GamePage</h1>
+            <canvas id="textcanvas" width="700" height="100" style="width: 700px; height:100px"/>
+        </div>
+            <div>
+                <canvas id="canvas" width="500" height="500" style = "width: 700px; height: 700px;"/>
+            </div>
+    </div>
+        <div id="menu">
+        <stack>
+            <h1>Maze Game</h1>
+            <stack id="buttons">
+              <button onclick="setupGame(5)">5X5</button>
+              <button onclick="setupGame(10)">10X10</button>
+              <button onclick="setupGame(15)">15X15</button>
+              <button onclick="setupGame(20)">20X20</button>
+            </stack>
+        </stack>
+        <div>
+            <h2>Leaderboard</h2>
+            <div  id="Leaderboard">
+              </div>
+        </div>
+        <div>
+            <h2>Controls and Information</h2>
+            <ul>
+              <li>WASD/IJKL/Arrow Keys to move</li>
+              <li>P to see shortest path</li>
+              <li>B to see breadcrumb trail</li>
+              <li>H to see hint of next best move</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Credits</h2>
+            <body1>This game was created by Landon Doyle for CS5410</body1>
+        </div>
+      </div>
+    </div>
+      <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
